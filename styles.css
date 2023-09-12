@@ -1,0 +1,262 @@
+ @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@200;400;500;600&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+
+ /* 
+===================
+Variables
+===================
+*/
+ :root {
+     --blue-1: rgb(173, 179, 187);
+     --blue-2: rgb(126, 135, 148);
+     --blue-3: rgb(16, 30, 49);
+     --blue-4: rgb(16, 30, 49);
+     --blue-5: rgb(7, 13, 21);
+     --cyan-1: rgb(140, 255, 255);
+     --cyan-2: rgb(77, 255, 255);
+     --cyan-3: rgb(0, 89, 89);
+     --cyan-4: rgb(0, 89, 89);
+     --cyan-5: rgb(0, 89, 89);
+ }
+
+ body {
+     min-height: 100vh;
+     background: linear-gradient(rgba(16, 30, 49, 0.7), rgba(16, 30, 49, 0.7)), url("./images/Cross\ Country.jpg")center/cover no-repeat;
+     color: var(--cyan-2);
+     font-family: sans-serif;
+     display: flex;
+     justify-content: center;
+ }
+
+ h2 {
+     font-size: 1.15rem;
+     text-transform: uppercase;
+     margin-bottom: 0.5rem;
+ }
+
+ h3 {
+     font-size: 0.95rem;
+     text-transform: uppercase;
+     margin-bottom: 0.75rem;
+     color: var(--blue-1);
+ }
+
+ h4 {
+     font-size: 0.7rem;
+     text-transform: uppercase;
+ }
+
+ p {
+     font-size: 0.65rem;
+     max-width: 14rem;
+ }
+
+ span {
+     color: red;
+ }
+
+ .container {
+     padding: 0.75rem 1.25rem;
+     /* max-width: 70rem; */
+ }
+
+ .quote {
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ .personal-info {
+     margin-top: 0.5rem;
+     margin-bottom: 0.5rem;
+ }
+
+ .title {
+     display: block;
+     text-transform: uppercase;
+     font-size: 0.65rem;
+ }
+
+ .info {
+     padding: 0.10rem 0.75rem;
+     margin-bottom: 0.45rem;
+     border: none;
+     width: 12rem;
+     color: var(--blue-2);
+ }
+
+ .info:focus {
+     outline: 0.1rem solid var(--cyan-2);
+ }
+
+ .info::placeholder {
+     text-transform: uppercase;
+     font-size: 0.6rem;
+     color: var(--blue-2);
+ }
+
+ .additional-info h3 {
+     font-size: 0.8rem;
+     max-width: 18rem;
+ }
+
+ .additional-info-1 {
+     margin-bottom: 0.5rem;
+ }
+
+ .options {
+     display: flex;
+ }
+
+ .option {
+     font-size: 0.9rem;
+     text-transform: uppercase;
+     padding-right: 2rem;
+ }
+
+ .batch {
+     text-transform: uppercase;
+     font-size: 0.8rem;
+ }
+
+ .policy {
+     margin-top: 0.5rem;
+ }
+
+ .policy-label {
+     text-transform: uppercase;
+     font-size: 0.65rem;
+     color: var(--cyan-1);
+ }
+
+ .btn {
+     background: var(--cyan-3);
+     font-size: 0.85rem;
+     color: var(--blue-2);
+     padding: 0.45rem 2rem;
+     text-transform: uppercase;
+     border: transparent;
+     margin-top: 0.5rem;
+     transition: all 0.25s ease-in-out;
+     font-weight: 600;
+     border-radius: 0.4rem;
+ }
+
+ .btn:hover {
+     color: var(--cyan-2);
+     background: var(--blue-1);
+ }
+
+
+ @media screen and (min-width:768px) {
+     .additional-info {
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 0.75rem;
+     }
+
+
+     .batch {
+         font-size: 0.65rem;
+     }
+
+     .policy-label {
+         font-size: 0.85rem;
+     }
+
+
+     p {
+         font-size: 0.75rem;
+     }
+
+
+
+     .additional-info h3 {
+         font-size: 0.85rem;
+     }
+
+     .batch {
+         font-size: 0.75rem;
+     }
+
+
+
+     .btn {
+         font-size: 1rem;
+         padding: 0.65rem 2.45rem;
+     }
+
+ }
+
+ @media screen and (min-width:968px) {
+     body {
+         display: block;
+     }
+
+     .container {
+         padding: 1.5rem 10rem;
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: column;
+         max-width: 100rem;
+     }
+
+     h2 {
+         font-size: 1.25rem;
+         margin-bottom: 0.5rem;
+     }
+
+     h3 {
+         font-size: 1rem;
+     }
+
+     h4 {
+         font-size: 0.8rem;
+     }
+
+     p {
+         font-size: 0.75rem;
+         max-width: 19rem;
+     }
+
+     .title {
+         font-size: 0.8rem;
+     }
+
+     .info {
+         padding: 0.15rem 1rem;
+         width: 25rem;
+     }
+
+     .info::placeholder {
+         text-transform: uppercase;
+         font-size: 0.8rem;
+     }
+
+     .additional-info {
+         width: 80%;
+     }
+
+     .additional-info h3 {
+         font-size: 1rem;
+     }
+
+     .additional-info-1,
+     .additional-info-2 {
+         flex: 0 0 calc(50% - 2.5rem);
+     }
+
+     .policy-label {
+         font-size: 0.9rem;
+     }
+
+     .btn {
+         padding: 0.65rem 2.5rem;
+         font-size: 1.1rem;
+     }
+ }

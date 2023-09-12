@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross Country || Sign-Up</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+
+<body>
+    <section class="container">
+        <h2>cross country marathon</h2>
+        <h3>sign up form</h3>
+        <article class="quote">
+            <p>If you want something you've never had, you must be willing to do something you've never done.
+                <br>— Thomas Jefferson, Third President of the United States
+            </p>
+        </article>
+        <form action="https://formspree.io/f/meqbzjrd" method="post">
+            <section class="personal-info">
+                <label for="f-name" class="title">first name <span>*</span></label>
+                <input type="text" id="f-name" class="info" placeholder="first name">
+                <label for="l-name" class="title">last name <span>*</span></label>
+                <input type="text" id="l-name" class="info" placeholder="last name">
+                <label for="email" class="title">email <span>*</span></label>
+                <input type="email" id="email" class="info" placeholder="email">
+            </section>
+            <section class="additional-info">
+                <section class="additional-info-1">
+                    <h3>have you previously signed up for this event before? <span>*</span></h3>
+                    <article class="options">
+                        <input type="radio" id="option-1" class="radio-option" name="ans">
+                        <label for="option-1" class="option"> yes</label>
+                        <div class="option-2">
+                            <input type="radio" id="option-2" class="radio-option" name="ans">
+                            <label for="option-2" class="option">no</label>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="additional-info-2">
+                    <h3>what are your preferred batches? <span>*</span>
+                    </h3>
+                    <article class="batch-option">
+                        <input type="checkbox" id="batch-1">
+                        <label for="batch-1" class="batch">batch 1 - 3rd, february</label>
+                    </article>
+                    <article class="batch-option">
+                        <input type="checkbox" id="batch-2">
+                        <label for="batch-2" class="batch">batch 2 - 5th, april</label>
+                    </article>
+                    <article class="batch-option">
+                        <input type="checkbox" id="batch-3">
+                        <label for="batch-3" class="batch">batch 3 - 23rd, august</label>
+                    </article>
+                    <article class="batch-option">
+                        <input type="checkbox" id="batch-4">
+                        <label for="batch-4" class="batch">batch 4 - 15th, october</label>
+                    </article>
+                    <article class="batch-option">
+                        <input type="checkbox" id="batch-5">
+                        <label for="batch-5" class="batch">batch 4 - 18th, december</label>
+                    </article>
+                </section>
+
+            </section>
+            <section class="policy">
+                <input type="checkbox" id="policy">
+                <label for="policy" class="policy-label">please accept our terms & privacy policy</label>
+            </section>
+
+            <button class="btn" type="submit">sign up</button>
+        </form>
+    </section>
+</body>
+
+</html>
